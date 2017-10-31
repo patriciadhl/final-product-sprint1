@@ -11,12 +11,15 @@ Consideraciones Específicas:
 
 ...
 
-1.Pedir datos de entrada para enviarlos a la función cipher o descipher.
-2.Si el campo del mensaje esta vacío o contiene números, enviar mensaje de alerta.
-3.Obtener el valor en código ASCII de cada una de las letras del mensaje.
-4.Aplicar la formula de Cifrado César (x - n) % 26 o descifrado (x + n) % 26.
-5.Obtener la letra correspondiente en código ASCII.
-6.Construir mensaje cifrado o descifrado.
+1. Pedir datos de entrada para enviarlos a la función cipher o descipher.
+2. Si el campo del mensaje esta vacío o contiene números, enviar mensaje de alerta.
+3. Obtener el valor en código ASCII de cada una de las letras del mensaje.
+4. Si el valor del código ASCII se encuentra entre 65 y 90 o 97 y 122,
+   4.1. Aplicar la formula de Cifrado César (x - n) % 26 o descifrado (x + n) % 26.
+   4.2. De lo contrario, enviar mensaje de alerta.
+5. Obtener la letra correspondiente en código ASCII.
+6. Construir mensaje cifrado o descifrado.
+7. Mostrar texto cifrado o descifrado.
 
 ...
 
@@ -24,4 +27,4 @@ Consideraciones Específicas:
 
 A continuación se incluye el diagrama de flujo.
 
-![diagrama de flujo] ()
+![Diagrama de flujo](assets/images/cipher-decipher.jpg)
